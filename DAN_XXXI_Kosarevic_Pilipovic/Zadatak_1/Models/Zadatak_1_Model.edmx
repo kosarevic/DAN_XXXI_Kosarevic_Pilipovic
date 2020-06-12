@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Zadatak_1_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblMenu">
+          <Key>
+            <PropertyRef Name="MenuId" />
+          </Key>
+          <Property Name="MenuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Meal" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <EntityType Name="tblOrder">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <EntityType Name="tblOrderMenu">
+          <Key>
+            <PropertyRef Name="OrderMenuId" />
+          </Key>
+          <Property Name="OrderMenuId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderId" Type="int" Nullable="false" />
+          <Property Name="MenuId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__tblOrderM__MenuI__797309D9">
+          <End Role="tblMenu" Type="Self.tblMenu" Multiplicity="1" />
+          <End Role="tblOrderMenu" Type="Self.tblOrderMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenu">
+              <PropertyRef Name="MenuId" />
+            </Principal>
+            <Dependent Role="tblOrderMenu">
+              <PropertyRef Name="MenuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblOrderM__Order__787EE5A0">
+          <End Role="tblOrder" Type="Self.tblOrder" Multiplicity="1" />
+          <End Role="tblOrderMenu" Type="Self.tblOrderMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblOrder">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="tblOrderMenu">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Zadatak_1_ModelStoreContainer">
+          <EntitySet Name="tblMenu" EntityType="Self.tblMenu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblOrder" EntityType="Self.tblOrder" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblOrderMenu" EntityType="Self.tblOrderMenu" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__tblOrderM__MenuI__797309D9" Association="Self.FK__tblOrderM__MenuI__797309D9">
+            <End Role="tblMenu" EntitySet="tblMenu" />
+            <End Role="tblOrderMenu" EntitySet="tblOrderMenu" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblOrderM__Order__787EE5A0" Association="Self.FK__tblOrderM__Order__787EE5A0">
+            <End Role="tblOrder" EntitySet="tblOrder" />
+            <End Role="tblOrderMenu" EntitySet="tblOrderMenu" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Zadatak_1_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblMenu">
+          <Key>
+            <PropertyRef Name="MenuId" />
+          </Key>
+          <Property Name="MenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Meal" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Price" Type="Int32" />
+          <NavigationProperty Name="tblOrderMenus" Relationship="Self.FK__tblOrderM__MenuI__797309D9" FromRole="tblMenu" ToRole="tblOrderMenu" />
+        </EntityType>
+        <EntityType Name="tblOrder">
+          <Key>
+            <PropertyRef Name="OrderId" />
+          </Key>
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Price" Type="Int32" />
+          <NavigationProperty Name="tblOrderMenus" Relationship="Self.FK__tblOrderM__Order__787EE5A0" FromRole="tblOrder" ToRole="tblOrderMenu" />
+        </EntityType>
+        <EntityType Name="tblOrderMenu">
+          <Key>
+            <PropertyRef Name="OrderMenuId" />
+          </Key>
+          <Property Name="OrderMenuId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <Property Name="MenuId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblMenu" Relationship="Self.FK__tblOrderM__MenuI__797309D9" FromRole="tblOrderMenu" ToRole="tblMenu" />
+          <NavigationProperty Name="tblOrder" Relationship="Self.FK__tblOrderM__Order__787EE5A0" FromRole="tblOrderMenu" ToRole="tblOrder" />
+        </EntityType>
+        <Association Name="FK__tblOrderM__MenuI__797309D9">
+          <End Role="tblMenu" Type="Self.tblMenu" Multiplicity="1" />
+          <End Role="tblOrderMenu" Type="Self.tblOrderMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenu">
+              <PropertyRef Name="MenuId" />
+            </Principal>
+            <Dependent Role="tblOrderMenu">
+              <PropertyRef Name="MenuId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__tblOrderM__Order__787EE5A0">
+          <End Role="tblOrder" Type="Self.tblOrder" Multiplicity="1" />
+          <End Role="tblOrderMenu" Type="Self.tblOrderMenu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblOrder">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="tblOrderMenu">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Zadatak_1_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblMenus" EntityType="Self.tblMenu" />
+          <EntitySet Name="tblOrders" EntityType="Self.tblOrder" />
+          <EntitySet Name="tblOrderMenus" EntityType="Self.tblOrderMenu" />
+          <AssociationSet Name="FK__tblOrderM__MenuI__797309D9" Association="Self.FK__tblOrderM__MenuI__797309D9">
+            <End Role="tblMenu" EntitySet="tblMenus" />
+            <End Role="tblOrderMenu" EntitySet="tblOrderMenus" />
+          </AssociationSet>
+          <AssociationSet Name="FK__tblOrderM__Order__787EE5A0" Association="Self.FK__tblOrderM__Order__787EE5A0">
+            <End Role="tblOrder" EntitySet="tblOrders" />
+            <End Role="tblOrderMenu" EntitySet="tblOrderMenus" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Zadatak_1_ModelStoreContainer" CdmEntityContainer="Zadatak_1_Entities">
+          <EntitySetMapping Name="tblMenus">
+            <EntityTypeMapping TypeName="Zadatak_1_Model.tblMenu">
+              <MappingFragment StoreEntitySet="tblMenu">
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+                <ScalarProperty Name="Meal" ColumnName="Meal" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblOrders">
+            <EntityTypeMapping TypeName="Zadatak_1_Model.tblOrder">
+              <MappingFragment StoreEntitySet="tblOrder">
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblOrderMenus">
+            <EntityTypeMapping TypeName="Zadatak_1_Model.tblOrderMenu">
+              <MappingFragment StoreEntitySet="tblOrderMenu">
+                <ScalarProperty Name="OrderMenuId" ColumnName="OrderMenuId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

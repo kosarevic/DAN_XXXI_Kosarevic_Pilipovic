@@ -1,0 +1,36 @@
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe.config
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.pdb
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.dll
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.xml
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csprojAssemblyReference.cache
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CoreCompileInputs.cache
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CopyComplete
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.exe
+C:\Users\panonit\Desktop\GIT\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.pdb
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe.config
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.pdb
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csprojAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.exe
+C:\Users\Aleksandar\Desktop\Beckup\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.pdb
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe.config
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.exe
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\Zadatak_1.pdb
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.dll
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.xml
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csprojAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.csproj.CopyComplete
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.exe
+C:\Users\Aleksandar\Desktop\Full project\DAN_XXXI_Kosarevic_Pilipovic\Zadatak_1\obj\Debug\Zadatak_1.pdb
